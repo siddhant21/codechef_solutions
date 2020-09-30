@@ -1,21 +1,19 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
+
+int main(){
 	int x;
-	float value =0;
 	float y;
 	cin>>x>>y;
-	if(x%5!=0 || x+0.5>y)
+	float res;
+	if(x%5==0 && y>x+0.5)
 	{
-		cout<<fixed<<setprecision(2)<<y;
+		res=y-x-0.50;
 	}
-	else if(x%5==0)
+	else
 	{
-		value=y-x-0.50;
-		cout<< fixed <<setprecision(2)<<value;
+		res=y;
 	}
-	return 0;
+   cout<<fixed<<setprecision(2)<<res<<"\n";
+   return 0;
 }
