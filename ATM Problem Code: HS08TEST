@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+//TO MAKE cout and cin equals to scanf
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	int x;
@@ -15,7 +16,7 @@ int main()
 	else if(x%5==0)
 	{
 		value=y-x-0.50;
-		cout<< fixed <<setprecision(2)<<value;
+		cout<< fixed <<setprecision(3)<<value;
 	}
 	return 0;
 }
